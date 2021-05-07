@@ -14,7 +14,13 @@ router.get('/', function(req, res, next) {
 });
 
 /** Post queue */
+router.post('/', function(req, res, next) {
+
+})
 
 /** Get queue */
+router.get('/:queueID', function(req, res, next) {
+  
+})
 
 module.exports = router;
