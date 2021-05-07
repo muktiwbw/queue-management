@@ -2,13 +2,13 @@ var express = require('express');
 var router = express.Router();
 const queueController = require('./../controllers/queueController');
 
-/* List all queues */
+//* List all queues
 router.get('/', queueController.all);
 
-/** Post queue */
+//* Post queue
 router.post('/', queueController.store)
 
-/** Get queue */
+//* Get queue
 router.get('/:queueID', queueController.get)
 
 module.exports = router;
